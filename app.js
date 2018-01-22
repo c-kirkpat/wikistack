@@ -9,7 +9,7 @@ const bodyParser = require('body-parser');
 const routes = require('./routes');
 const models = require('./models');
 
-const env = nunjucks.configure('views',{nocache: true});
+const env = nunjucks.configure('views', {nocache: true});
 app.set('view engine', 'html');
 app.engine('html', nunjucks.render);
 
